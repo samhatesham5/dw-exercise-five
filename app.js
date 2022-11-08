@@ -22,9 +22,12 @@ firebase.initializeApp(firebaseConfig);
 //Routing for other pages
 const indexRoute = require('./routes/index.js');
 const singlePostRoute = require('./routes/singlePost.js');
+const createPostRouter = require('./routes/createPost.js');
 
+//Tell express to use these routes
 app.use ("/", indexRoute);
 app.use ("/post", singlePostRoute);
+app.use("/create", createPostRouter); 
 
 app.listen(port, () => {
   console.log(`Example app listening on port http://localhost:${port}`);
