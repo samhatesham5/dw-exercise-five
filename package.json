@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/samhatesham5/dw-exercise-five#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "firebase": "^9.13.0"
   },
   "engines": {
     "node": "16.17.0"
